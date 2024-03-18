@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo IMC</title>
+</head>
+<body>
+    <Script>
+
+        const nomePessoa = prompt("Informe seu Nome:")
+        const altura = parseFloat(prompt("Informe sua Altura em metros:"))
+        const peso = parseFloat(prompt("Informe seu peso em kg:"))
+
+        const imc = peso / (altura * altura);
+
+
+         if  (imc  < 18.5) {
+            alert(`O (A) ${nomePessoa} está abaixo do peso com IMC ${imc.tofixed(1)}`)
+         }
+
+        else if (imc >= 18.5 && imc <= 24.9){
+            alert(`O (A) ${nomePessoa} está no peso normal com IMC ${imc.toFixed(1)}`)
+        }
+
+        else if( imc >= 25 && imc <= 29.9){
+            alert(`O (A) ${nomePessoa} está no sobrepeso com IMC ${imc.toFixed(1)}`)
+        }
+
+        else if(imc >= 30 && imc <= 34.9){
+            alert(`O (A) ${nomePessoa} está Obessidade Grau I com IMC ${imc.toFixed(1)}`)
+        }
+
+        else if(imc >= 35 && imc <= 39.9) {
+            alert(`O (A) ${nomePessoa} está Obessididade grau II com IMC ${imc.toFixed(1)}`)
+        }
+
+        else if (imc >40) {
+            alert(`O (A) ${nomePessoa} está Obessidade Grau III com IMC ${imc.toFixed(1)}`)
+        }
+
+
+    </Script>
+    
+</body>
+</html>
